@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="/index">Ana Sayfa</a>
+        <a href="/lmsprices">Otopark Ücretleri</a>
+        <a href="#">Otopark Hakkında</a>    
+    </header>
+
+    <div class="main-container">
+        <form action="/saveUser" method="post">
+            <h1 style="color: #92b6f0; text-align:center;">Sign Up</h1>
+            <!--<label for="setUserNameHead">Kullanıcı Adı</label>--><br>
+                <input type="text" name="username" id="username" placeholder="Kullanıcı Adı"><br><br>
+            <!--<label for="setEmail">E-Mail</label>--><br>
+                <input type="email" name="useremail" id="useremail" placeholder="E-Posta"><br><br>
+            <!--<label for="setPasswordHead">Şifre</label>--><br>
+                <input type="password" name="userpass" id="userpass"  placeholder="Şifre"><br><br>
+            <input type="submit" value="Kayıt Ol" id="submit"><br><br>
+			<a href="/lmslog" class="form-a">Zaten Hesabın Var Mı?</a>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Otopark Sistemi | Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            background-color:#202020;
+            height: 12vh;
+            border-bottom: solid 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2%;
+        }
+        header a{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-style: none;
+            padding: 1.5%;
+            border-radius: 1vh;
+            background-color: #202020;
+            color: white;
+            transition: 0.3s;
+            text-decoration: none;
+            font-size: 1.3em;
+        }
+        header a:hover{
+            background-color: #b9e2f5;
+            color: black;
+        }
+        
+        .main-container{
+            background-color: 	#266b12;
+            border-radius: 2%;
+            margin-top: 4%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-style: solid;
+            border-width: 2px;
+            height: max-content;
+            width: max-content;
+            padding: 3% 12%;
+        }
+        .main-container label{
+            font-size: x-large;
+        }
+        .main-container #username,#userpass,#useremail{
+            padding: 4%;
+            font-size: medium;
+            width: 130%;
+            margin-left: -14%;
+        }
+        .main-container #submit{
+            font-size: 1em;
+            border-radius: 10px;
+            border: none;
+            padding: 5% 20%;
+            transition: 0.4s;
+        }
+        .main-container #submit:hover{
+            transform: scale(1.02);
+            color: black;
+            background-color: #b9e2f5;
+        }
+        footer {
+            background-color: #202020;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 50px;
+            font-size: 1rem;
+        }
+		.form-a{
+		    text-align: center;
+		    text-decoration: none;
+		    color: #92b6f0;
+		}
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+            header a {
+                padding: 10px;
+                font-size: 1.1em;
+            }
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+        
+    </style>
+	<script>
+		
+	</script>
+</body>
+</html>

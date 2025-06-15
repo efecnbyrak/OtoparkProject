@@ -1,0 +1,11 @@
+@SpringBootApplication
+-- Bu Bizim Main sayfamız Gibidir.
+@Table(name="tablo_değişken_ismi")
+-- SQL Tablomuzdaki ismi alır
+@Autowired
+-- Sınıfları veya Interface'leri new lemeden kullanmamızı sağlar örnek
+-- @Autowired
+-- private UserRepository jpaRepository;
+@GeneratedValue(strategy = GeneratedType.IDENTITY)
+-- Girilen Long id, int id  yani id değerlerinin her bir kayıtta otomatik artıcağının
+-- değerini söyüyor.

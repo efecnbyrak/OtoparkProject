@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="/index">Ana Sayfa</a>
+        <a href="/lmsprices">Otopark Ücretleri</a>
+        <a href="#">Otopark Hakkında</a>
+        <a href="/lmslog">Giriş Yap</a>
+        <a href="/lms">Kayıt Ol</a>    
+    </header>
+
+    <!--<div class="main-container">
+
+    </div>-->
+
+    <div class="main">
+        <div class="silver-ticket">
+            <h1>Gümüş Paket</h1><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestias.</p><br><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, maxime.</p><br><br>
+            <a href="">Satın Al</a>
+        </div>
+        <div class="gold-ticket">
+            <h1>Altın Paket</h1><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestias.</p><br><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, maxime.</p><br><br>
+            <a href="">Satın Al</a>
+        </div>
+        <div class="premium-ticket">
+            <h1>Premium Paket</h1><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestias.</p><br><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, maxime.</p><br><br>
+            <a href="">Satın Al</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Otopark Sistemi | Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header {
+            background-color: #202020;
+            height: 12vh;
+            border-bottom: solid 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2%;
+        }
+        header a {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-style: none;
+            padding: 1.5%;
+            border-radius: 1vh;
+            background-color: #202020;
+            color: white;
+            transition: 0.3s;
+            text-decoration: none;
+            font-size: 1.3em;
+        }
+        header a:hover {
+            background-color: #b9e2f5;
+            color: black;
+        }
+        .main {
+            margin-top: 4%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .main a {
+            padding: 2vh 2.5vh;
+            border-style: solid;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 1vh;
+        }
+        .gold-ticket a{
+            border-color: #202020;
+            background-color: #BE9030;
+            color: white;
+            font-weight: 600;
+        }
+        .silver-ticket a{
+            border-color: #202020;
+            background-color: silver;
+            color: white;
+            font-weight: 600;
+        }
+        .premium-ticket a{
+            border-color: #202020;
+            background-color: rgb(42, 42, 239);
+            color: white;
+            font-weight: 600;
+        }
+        .gold-ticket{
+            background-image: url('/images/gold-color.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 20px;
+            border-radius: 2vh;
+            display: inline-block;
+            width: 25%;
+            height: auto;
+            font-weight: 600;
+            border-style: solid;
+            transition: 0.4s ease;
+            text-align: center;
+        }
+        .silver-ticket{
+            background-image: url('/images/silver-color.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 20px;
+            border-radius: 2vh;
+            display: inline-block;
+            width: 25%;
+            height: auto;
+            font-weight: 600;
+            border-style: solid;
+            transition: 0.4s ease;
+            text-align: center;
+        }
+        .premium-ticket {
+            background-image: url('/images/diamond-color.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: -2vh -0.49px;
+            padding: 20px;
+            border-radius: 2vh;
+            display: inline-block;
+            width: 25%;
+            height: auto;
+            font-weight: 600;
+            border-style: solid;
+            transition: 0.4s ease;
+            text-align: center;
+        }
+        footer {
+            background-color: #202020;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 50px;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+        
+            header a {
+                padding: 10px;
+                font-size: 1.1em;
+            }
+        
+            .main {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+        
+            .gold-ticket,
+            .silver-ticket,
+            .premium-ticket {
+                width: 90%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+        
+            .main a {
+                margin-top: 10px;
+                padding: 10px 20px;
+            }
+        
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+        
+        
+
+    </style>
+	<script>
+		
+	</script>
+</body>
+</html>
