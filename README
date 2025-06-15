@@ -1,11 +1,28 @@
-@SpringBootApplication
--- Bu Bizim Main sayfamız Gibidir.
-@Table(name="tablo_değişken_ismi")
--- SQL Tablomuzdaki ismi alır
-@Autowired
--- Sınıfları veya Interface'leri new lemeden kullanmamızı sağlar örnek
--- @Autowired
--- private UserRepository jpaRepository;
-@GeneratedValue(strategy = GeneratedType.IDENTITY)
--- Girilen Long id, int id  yani id değerlerinin her bir kayıtta otomatik artıcağının
--- değerini söyüyor.
+# OtoparkProject 🚗
+
+Bu proje, kullanıcıların çevrimiçi otopark rezervasyonu yapabildiği bir web uygulamasıdır. Spring Boot, HTML, CSS ve SQL kullanılarak geliştirilmiştir.
+
+!!!-- Hala gelişim aşamasındadır --!!!
+
+## 🔧 Kullanılan Teknolojiler
+
+- Java 21
+- Spring Boot 3.4.4
+- HTML & CSS
+- MS SQL Server
+- Spring Data JPA
+
+## 🔑 Özellikler
+
+- Kullanıcı kaydı ve girişi
+- Farklı kullanıcı rolleri (Admin, Kullanıcı) // Yapım aşamasında
+- Otopark yerlerinin 2D olarak görüntülenmesi
+- Gold kullanıcılar için özel alanlar
+- Plaka ile yer ayırtma sistemi // yapım aşamasında
+- Admin paneli (kullanıcı yönetimi) // Yapım aşamasında
+
+## 🧪 Kurulum (Yerel Geliştirme İçin)
+
+1. Bu repoyu klonlayın:
+   ```bash
+   git clone https://github.com/efecanbyrak/OtoparkProject.git
